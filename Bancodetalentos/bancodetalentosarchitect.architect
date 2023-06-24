@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<architect-project version="1.0" appversion="1.0.9">
+ <project-name>bancodetalentosarchitect</project-name>
+ <print-settings numCopies="1" zoom="1.0" pageNumbersPrinted="true" orientation="1" paperWidth="612.0" paperHeight="792.0" leftBorder="50.0" rightBorder="50.0" topBorder="50.0" bottomBorder="50.0" />
+ <project-data-sources>
+  <data-source id="DS0">
+   <property key="Logical" value="PlayPen Database" />
+  </data-source>
+ </project-data-sources>
+ <source-databases>
+ </source-databases>
+ <target-database id="ppdb" dbcs-ref="DS0">
+  <table id="TAB1" populated="true" UUID="b5886312-15d5-436b-ad45-70c8183a17ad" name="funcionarios" objectType="TABLE" physicalName="funcionarios" >
+   <remarks>É a tabela que guarda os dados dos funcionários.</remarks>
+   <folder id="FOLTAB11" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL2" populated="true" UUID="ca4c584a-87b9-4418-b7f9-c1ce708c585a" autoIncrement="false" autoIncrementSequenceName="funcionarios_funcionario_id_seq" defaultValue="" name="funcionario_id" nullable="0" physicalName="funcionario_id" precision="38" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
+     <remarks>ID que representa o funcionário sendo a pk da tabela funcionários</remarks>
+    </column>
+    <column id="COL3" populated="true" UUID="41484f2d-b341-4d03-a03a-562d80d47cfd" autoIncrement="false" autoIncrementSequenceName="funcionarios_nome_seq" defaultValue="" name="nome" nullable="0" physicalName="nome" precision="150" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>Nome completo do funcionário</remarks>
+    </column>
+    <column id="COL4" populated="true" UUID="12e6211a-68d6-4dcc-aaf2-fd216bbec882" autoIncrement="false" autoIncrementSequenceName="funcionarios_cargo_seq" defaultValue="" name="cargo" nullable="0" physicalName="cargo" precision="150" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>cargo referente a cada funcionário</remarks>
+    </column>
+    <column id="COL5" populated="true" UUID="bb5145be-8ba0-497c-a574-e8841ca0470c" autoIncrement="false" autoIncrementSequenceName="funcionarios_experiencia_seq" defaultValue="" name="experiencia" nullable="0" physicalName="experiencia" precision="15" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>Grau de experiência do funcionário</remarks>
+    </column>
+    <column id="COL6" populated="true" UUID="89ed26d5-3b35-4e58-970c-d02918b90fec" autoIncrement="false" autoIncrementSequenceName="funcionarios_hard_skills_seq" defaultValue="" name="hard_skills" nullable="0" physicalName="hard_skills" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>Habilidades técnicas de cada funcionário</remarks>
+    </column>
+    <column id="COL7" populated="true" UUID="cbf5136d-8a3e-4d41-88e3-7af285fe16fe" autoIncrement="false" autoIncrementSequenceName="funcionarios_soft_skills_seq" defaultValue="" name="soft_skills" nullable="0" physicalName="soft_skills" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>Competências subjetivas dos funcionários</remarks>
+    </column>
+    <column id="COL8" populated="true" UUID="65dc331d-38af-4360-aa14-501146784967" autoIncrement="false" autoIncrementSequenceName="funcionarios_formacao_academica_seq" defaultValue="" name="formacao_academica" nullable="0" physicalName="formacao_academica" precision="30" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>Nível de ensino que o funcionário obteve</remarks>
+    </column>
+    <column id="COL9" populated="true" UUID="b7ec3842-5753-4cf6-93d4-d5af849e5122" autoIncrement="false" autoIncrementSequenceName="funcionarios_hobbies_seq" defaultValue="" name="hobbies" nullable="1" physicalName="hobbies" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>interesses pessoais do funcionário</remarks>
+    </column>
+    <column id="COL10" populated="true" UUID="018c2133-8245-47a5-a2e7-88b0973ad0f2" autoIncrement="false" autoIncrementSequenceName="funcionarios_cep_seq" defaultValue="" name="cep" nullable="0" physicalName="cep" precision="15" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
+     <remarks>CEP referente ao funcionário</remarks>
+    </column>
+    <column id="COL11" populated="true" UUID="81371152-cf61-40bc-aa88-97b1904ef4c9" autoIncrement="false" autoIncrementSequenceName="funcionarios_numero_seq" defaultValue="" name="numero" nullable="0" physicalName="numero" precision="10" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
+     <remarks>Número do prédio ou da casa de onde o funcionário mora</remarks>
+    </column>
+    <column id="COL12" populated="true" UUID="8497441e-9745-4ede-a970-b8aea8395e0d" autoIncrement="false" autoIncrementSequenceName="funcionarios_complemento_seq" defaultValue="" name="complemento" nullable="1" physicalName="complemento" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
+     <remarks>o complemento que o funcionário quiser colocar</remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB13" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB12" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB14" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX13" populated="true" UUID="f74645ef-4d99-4169-83ae-2886a24f94e3" clustered="false" name="funcionarios_pk" physicalName="funcionarios_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC14" populated="true" UUID="e14fef47-ad10-4d73-b692-102807b0626a" ascendingOrDescending="UNSPECIFIED" column-ref="COL2" name="funcionario_id" physicalName="funcionario_id" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB15" populated="true" UUID="69db7a8a-c5a7-45fd-8b11-eb830c0a19c4" name="cursos" objectType="TABLE" physicalName="cursos" >
+   <remarks>tabela referente ao curso que o funcionário está fazendo</remarks>
+   <folder id="FOLTAB151" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL16" populated="true" UUID="4963be54-52ec-4dc4-960e-f76b1a0bc621" autoIncrement="false" autoIncrementSequenceName="cursos_curso_id_seq" defaultValue="" name="curso_id" nullable="0" physicalName="curso_id" precision="38" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
+     <remarks>ID do curso sendo a pk da tabela cursos</remarks>
+    </column>
+    <column id="COL17" populated="true" UUID="b69cd18d-03f6-4efb-b82b-a808693ec94d" autoIncrement="false" autoIncrementSequenceName="cursos_nome_seq" defaultValue="" name="nome" nullable="0" physicalName="nome" precision="150" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>nome referente ao curso</remarks>
+    </column>
+    <column id="COL18" populated="true" UUID="eadbb92d-8c84-4ca2-8bd0-c23ec1f42b9f" autoIncrement="false" autoIncrementSequenceName="cursos_instituicao_seq" defaultValue="" name="instituicao" nullable="0" physicalName="instituicao" precision="150" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>A instituição em que o funcionário realizou o curso</remarks>
+    </column>
+    <column id="COL19" populated="true" UUID="0a978ac5-814e-4901-81f9-61fe75f3d0d5" autoIncrement="false" autoIncrementSequenceName="cursos_carga_horaria_seq" defaultValue="" name="carga_horaria" nullable="0" physicalName="carga_horaria" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>Tempo de curso que o funcionário tem que realizar</remarks>
+    </column>
+    <column id="COL20" populated="true" UUID="6898c9ba-bb42-435a-82c4-fb4f97f65fce" autoIncrement="false" autoIncrementSequenceName="cursos_certificacoes_seq" defaultValue="" name="certificacoes" nullable="0" physicalName="certificacoes" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>Certificações do curso realizado</remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB153" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB152" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB154" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX21" populated="true" UUID="00685752-24a8-4da0-965c-e7b713d83981" clustered="false" name="cursos_pk" physicalName="cursos_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC22" populated="true" UUID="79e20c84-76a6-4586-a0ca-a5b4b024b866" ascendingOrDescending="UNSPECIFIED" column-ref="COL16" name="curso_id" physicalName="curso_id" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB23" populated="true" UUID="77533188-be54-467f-bab3-57902e39c5a9" name="projetos" objectType="TABLE" physicalName="projetos" >
+   <remarks>tabela referente aos projetos realizados</remarks>
+   <folder id="FOLTAB231" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL24" populated="true" UUID="a888b61a-6c60-4372-a2dc-e9f21f9a7a23" autoIncrement="false" autoIncrementSequenceName="projetos_projeto_id_seq" defaultValue="" name="projeto_id" nullable="0" physicalName="projeto_id" precision="38" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
+     <remarks>ID do projeto sendo a pk da tabela projetos</remarks>
+    </column>
+    <column id="COL25" populated="true" UUID="cf86f537-2f69-459a-afe5-aeb044e3c87e" autoIncrement="false" autoIncrementSequenceName="projetos_nome_seq" defaultValue="" name="nome" nullable="0" physicalName="nome" precision="150" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>nome do projeto</remarks>
+    </column>
+    <column id="COL26" populated="true" UUID="2d3315a7-db2f-40eb-9d1b-2113f4a3b172" autoIncrement="false" autoIncrementSequenceName="projetos_descricao_seq" defaultValue="" name="descricao" nullable="0" physicalName="descricao" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>Descrição sobre o projeto feito</remarks>
+    </column>
+    <column id="COL27" populated="true" UUID="130da5e2-6c73-45dd-9707-3302ec2738ed" autoIncrement="false" autoIncrementSequenceName="projetos_periodo_de_execucao_seq" defaultValue="" name="periodo_de_execucao" nullable="0" physicalName="periodo_de_execucao" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>Período de execução do projeto</remarks>
+    </column>
+    <column id="COL28" populated="true" UUID="49b0a633-f1d9-4e57-854f-5d556757010b" autoIncrement="false" autoIncrementSequenceName="projetos_funcao_desempenhada_seq" defaultValue="" name="funcao_desempenhada" nullable="0" physicalName="funcao_desempenhada" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>Função desempenhda pelo funcionário no projeto</remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB233" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB232" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB234" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX29" populated="true" UUID="823338c9-45fe-4d92-bb40-ba6d82c9a22d" clustered="false" name="projetos_pk" physicalName="projetos_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC30" populated="true" UUID="8e36ac6d-6326-4837-86dd-b65b4ea51df7" ascendingOrDescending="UNSPECIFIED" column-ref="COL24" name="projeto_id" physicalName="projeto_id" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB31" populated="true" UUID="026f1ff6-e87e-498c-b7aa-9320abfd0935" name="associacao_funcionario_projeto" objectType="TABLE" physicalName="associacao_funcionario_projeto" >
+   <remarks>tabela que interliga os funcionários com os projetos</remarks>
+   <folder id="FOLTAB311" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL32" populated="true" UUID="b66634d0-f787-4cb4-9dd5-b1197cc7e9c7" autoIncrement="false" autoIncrementSequenceName="associacao_funcionario_projeto_associacao_funcionario_projeto_id_seq" defaultValue="" name="associacao_funcionario_projeto_id" nullable="0" physicalName="associacao_funcionario_projeto_id" precision="38" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
+     <remarks>ID da associacao entre os funcionarios e os projetos sendo a pk da tabela</remarks>
+    </column>
+    <column id="COL33" populated="true" UUID="1f38e6a7-3b08-4542-9f13-e8180e9cbc00" autoIncrement="false" autoIncrementSequenceName="funcionarios_funcionario_id_seq" defaultValue="" name="funcionario_id" nullable="0" physicalName="funcionario_id" precision="38" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
+     <remarks>ID que representa o funcionário sendo a fk da tabela funcionário_projeto</remarks>
+    </column>
+    <column id="COL34" populated="true" UUID="ac2999d0-1a02-466a-96da-c2de2841c865" autoIncrement="false" autoIncrementSequenceName="projetos_projeto_id_seq" defaultValue="" name="projeto_id" nullable="0" physicalName="projeto_id" precision="38" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
+     <remarks>ID do projeto sendo a fk da tabela funcionário_projeto</remarks>
+    </column>
+    <column id="COL35" populated="true" UUID="c0de6350-fea0-42c6-a176-602972bf0a97" autoIncrement="false" autoIncrementSequenceName="associacao_funcionario_projeto_data_de_inicio_seq" defaultValue="" name="data_de_inicio" nullable="0" physicalName="data_de_inicio" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="91" userDefinedTypeUUID="ee349be3-6af2-46e1-b305-975f5354b009" >
+     <remarks>Data em que o funcionário começou a realizar o projeto</remarks>
+    </column>
+    <column id="COL36" populated="true" UUID="7c445d8e-64e2-4feb-bf8c-2203796f7ca2" autoIncrement="false" autoIncrementSequenceName="associacao_funcionario_projeto_data_de_termino_seq" defaultValue="" name="data_de_termino" nullable="0" physicalName="data_de_termino" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="91" userDefinedTypeUUID="ee349be3-6af2-46e1-b305-975f5354b009" >
+     <remarks>Data em que o funcionário terminou o projeto</remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB313" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB312" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB314" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX37" populated="true" UUID="5a1cb3c4-0615-4b7c-abb7-c887e2c9a09d" clustered="false" name="associacao_funcionario_projeto_pk" physicalName="associacao_funcionario_projeto_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC38" populated="true" UUID="f35e66e9-3136-4893-9780-55e7b7549943" ascendingOrDescending="UNSPECIFIED" column-ref="COL32" name="associacao_funcionario_projeto_id" physicalName="associacao_funcionario_projeto_id" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB39" populated="true" UUID="83c08e1c-5d10-43a2-8b54-6861a3c71df2" name="associacao_funcionarios_cursos" objectType="TABLE" physicalName="associacao_funcionarios_cursos" >
+   <remarks>tabela refente a associacao entre os funcionarios e os cursos realizados</remarks>
+   <folder id="FOLTAB391" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL40" populated="true" UUID="08b13523-e228-4f73-b781-5f43929cf360" autoIncrement="false" autoIncrementSequenceName="associacao_funcionarios_cursos_associacao_funcionarios_cursos_id_seq" defaultValue="" name="associacao_funcionarios_cursos_id" nullable="0" physicalName="associacao_funcionarios_cursos_id" precision="38" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
+     <remarks>ID da associacao entre os funcionarios e os cursos</remarks>
+    </column>
+    <column id="COL41" populated="true" UUID="a64d0254-be81-4d37-8f99-45f76f167cff" autoIncrement="false" autoIncrementSequenceName="funcionarios_funcionario_id_seq" defaultValue="" name="funcionario_id" nullable="0" physicalName="funcionario_id" precision="38" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
+     <remarks>ID que representa o funcionário sendo a fk da tabela funcionário_cursos</remarks>
+    </column>
+    <column id="COL42" populated="true" UUID="8e5fdb09-7259-4f54-8ac9-9fbc45d5050b" autoIncrement="false" autoIncrementSequenceName="cursos_curso_id_seq" defaultValue="" name="curso_id" nullable="0" physicalName="curso_id" precision="38" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
+     <remarks>ID do curso sendo a fk da tabela funcionário_cursos</remarks>
+    </column>
+    <column id="COL43" populated="true" UUID="a6b2dda8-cab7-468e-9aa4-68fbe85a3fe3" autoIncrement="false" autoIncrementSequenceName="associacao_funcionarios_cursos_data_de_conclusao_seq" defaultValue="" name="data_de_conclusao" nullable="0" physicalName="data_de_conclusao" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="91" userDefinedTypeUUID="ee349be3-6af2-46e1-b305-975f5354b009" >
+     <remarks>Data em que o funcionário terminou o curso</remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB393" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB392" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB394" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX44" populated="true" UUID="0631b498-284f-480b-a2ef-f802ad4a1cde" clustered="false" name="associacao_funcionarios_cursos_pk" physicalName="associacao_funcionarios_cursos_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC45" populated="true" UUID="eb86a8ac-aa6d-4616-853b-51395b015417" ascendingOrDescending="UNSPECIFIED" column-ref="COL40" name="associacao_funcionarios_cursos_id" physicalName="associacao_funcionarios_cursos_id" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB46" populated="true" UUID="5addeef4-08cd-4405-9b7d-75ee356ee38e" name="funcionarios_contato" objectType="TABLE" physicalName="funcionarios_contato" >
+   <remarks>tabela referente aos tipos de contatos do funcionario</remarks>
+   <folder id="FOLTAB461" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL47" populated="true" UUID="d2baac32-5543-4dbc-bcb4-9cfb3dca94ad" autoIncrement="false" autoIncrementSequenceName="funcionarios_contato_email_seq" defaultValue="" name="email" nullable="0" physicalName="email" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>email do funcionario</remarks>
+    </column>
+    <column id="COL48" populated="true" UUID="76293e2b-6784-4d1e-afb0-d5b212fb812b" autoIncrement="false" autoIncrementSequenceName="funcionarios_funcionario_id_seq" defaultValue="" name="funcionario_id" nullable="0" physicalName="funcionario_id" precision="38" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
+     <remarks>ID que representa o funcionário sendo a fk da tabela contato
+</remarks>
+    </column>
+    <column id="COL49" populated="true" UUID="141b13cd-8365-4043-bc02-5c4096d09ba1" autoIncrement="false" autoIncrementSequenceName="funcionarios_contato_telefone_seq" defaultValue="" name="telefone" nullable="0" physicalName="telefone" precision="11" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
+     <remarks>coluna referente ao numero de telefone do funcionario</remarks>
+    </column>
+    <column id="COL50" populated="true" UUID="38e9e1b0-8c43-4858-ad09-222d3945d5f9" autoIncrement="false" autoIncrementSequenceName="funcionarios_contato_github_seq" defaultValue="" name="github" nullable="1" physicalName="github" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>coluna que da o github do funcionario caso ele queira colocar</remarks>
+    </column>
+    <column id="COL51" populated="true" UUID="dd32424e-6126-4331-9c46-2759de7bde9f" autoIncrement="false" autoIncrementSequenceName="funcionarios_contato_linkedin_seq" defaultValue="" name="linkedin" nullable="1" physicalName="linkedin" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>coluna que da o linkedin do funcionario caso ele queira</remarks>
+    </column>
+    <column id="COL52" populated="true" UUID="1d7af1b4-fb45-4b14-bb4b-863c139d1169" autoIncrement="false" autoIncrementSequenceName="funcionarios_contato_instagram_seq" defaultValue="" name="instagram" nullable="1" physicalName="instagram" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>instagram do funcionario</remarks>
+    </column>
+    <column id="COL53" populated="true" UUID="69ffa877-c415-4e7f-8e0d-1aac9211ee97" autoIncrement="false" autoIncrementSequenceName="funcionarios_contato_twitter_seq" defaultValue="" name="twitter" nullable="1" physicalName="twitter" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>twitter do funcionario</remarks>
+    </column>
+    <column id="COL54" populated="true" UUID="f71b62f2-0121-496d-bac9-853c3347e7e1" autoIncrement="false" autoIncrementSequenceName="funcionarios_contato_facebook_seq" defaultValue="" name="facebook" nullable="1" physicalName="facebook" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>facebook do funcionario</remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB463" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB462" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB464" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX55" populated="true" UUID="aec802d4-dc84-47a6-97f8-482bb27fbe9c" clustered="false" name="contato_pk" physicalName="contato_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC56" populated="true" UUID="6d25143f-57d4-4428-9ad3-456d071cd2d1" ascendingOrDescending="UNSPECIFIED" column-ref="COL47" name="email" physicalName="email" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB57" populated="true" UUID="94043933-8ec2-46e6-83d4-3e0740ef9144" name="departamentos" objectType="TABLE" physicalName="departamentos" >
+   <remarks>tabela referente aos departamentos </remarks>
+   <folder id="FOLTAB571" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL58" populated="true" UUID="c2f7f896-7c36-4e5a-9384-11bf4a0a55a8" autoIncrement="false" autoIncrementSequenceName="departamentos_departamento_id_seq" defaultValue="" name="departamento_id" nullable="0" physicalName="departamento_id" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
+     <remarks>ID do departamento</remarks>
+    </column>
+    <column id="COL59" populated="true" UUID="48206e66-1a29-4606-877b-35683bd48642" autoIncrement="false" autoIncrementSequenceName="funcionarios_funcionario_id_seq" defaultValue="" name="funcionario_id" nullable="0" physicalName="funcionario_id" precision="38" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
+     <remarks>ID que representa o funcionário sendo a pk da tabela funcionários</remarks>
+    </column>
+    <column id="COL60" populated="true" UUID="6832985f-7531-4794-80f2-621725060103" autoIncrement="false" autoIncrementSequenceName="departamentos_nome_seq" defaultValue="" name="nome" nullable="0" physicalName="nome" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>nome do departamento </remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB573" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB572" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB574" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX61" populated="true" UUID="c394b551-c833-42d6-a7ab-70d7dc824ef4" clustered="false" name="departamento_pk" physicalName="departamento_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC62" populated="true" UUID="6c124447-6d21-4a52-a6ad-7f02252efe93" ascendingOrDescending="UNSPECIFIED" column-ref="COL58" name="departamento_id" physicalName="departamento_id" />
+    </index>
+   </folder>
+  </table>
+  <relationships>
+   <relationship id="REL63" populated="true" UUID="32a42cdf-8523-443b-939d-2cb97cb6ff1f" deferrability="7" deleteRule="3" fk-table-ref="TAB31" fkCardinality="7" identifying="false" name="funcionarios_associacao_funcionario_projeto_fk" physicalName="funcionarios_associacao_funcionario_projeto_fk" pk-table-ref="TAB1" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP64" populated="true" UUID="125afc89-3c34-4c8b-88fc-4675dbd39c8a" fk-column-ref="COL33" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL2" />
+   </relationship>
+   <relationship id="REL65" populated="true" UUID="5bd6fdbc-5d9c-4ee5-ac68-50ea9325d4be" deferrability="7" deleteRule="3" fk-table-ref="TAB39" fkCardinality="7" identifying="false" name="funcionarios_associacao_funcionarios_cursos_fk" physicalName="funcionarios_associacao_funcionarios_cursos_fk" pk-table-ref="TAB1" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP66" populated="true" UUID="682a4aac-c9e5-40e7-8435-33db9b695795" fk-column-ref="COL41" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL2" />
+   </relationship>
+   <relationship id="REL67" populated="true" UUID="df3a15bf-aca0-4de8-b530-04f7ed4f1a22" deferrability="7" deleteRule="3" fk-table-ref="TAB46" fkCardinality="7" identifying="false" name="funcionarios_funcionarios_contato_fk" physicalName="funcionarios_funcionarios_contato_fk" pk-table-ref="TAB1" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP68" populated="true" UUID="40e169e7-0a5d-438c-be34-931d6ea31def" fk-column-ref="COL48" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL2" />
+   </relationship>
+   <relationship id="REL69" populated="true" UUID="c2c0d3ae-13d3-4e3c-b545-74145d040dbe" deferrability="7" deleteRule="3" fk-table-ref="TAB57" fkCardinality="7" identifying="false" name="funcionarios_departamentos_fk" physicalName="funcionarios_departamentos_fk" pk-table-ref="TAB1" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP70" populated="true" UUID="ac702446-d599-4630-91e5-0c8652599a7a" fk-column-ref="COL59" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL2" />
+   </relationship>
+   <relationship id="REL71" populated="true" UUID="6cc04338-adac-4bc2-915f-eebe613d1660" deferrability="7" deleteRule="3" fk-table-ref="TAB39" fkCardinality="7" identifying="false" name="cursos_associacao_funcionarios_cursos_fk" physicalName="cursos_associacao_funcionarios_cursos_fk" pk-table-ref="TAB15" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP72" populated="true" UUID="91e270da-914b-41d2-9544-920abed46deb" fk-column-ref="COL42" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL16" />
+   </relationship>
+   <relationship id="REL73" populated="true" UUID="c329bd06-419d-47c0-922a-19ad8734eaa5" deferrability="7" deleteRule="3" fk-table-ref="TAB31" fkCardinality="7" identifying="false" name="projetos_associacao_funcionario_projeto_fk" physicalName="projetos_associacao_funcionario_projeto_fk" pk-table-ref="TAB23" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP74" populated="true" UUID="db68b181-1b50-4f17-a89e-bf5e78f69dd3" fk-column-ref="COL34" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL24" />
+   </relationship>
+  </relationships>
+ </target-database>
+ <ddl-generator type="ca.sqlpower.architect.ddl.GenericDDLGenerator" allow-connection="true"> </ddl-generator>
+ <liquibase-settings useSeparateChangeSets="false" generateId="false" idStart="1"/>
+ <create-kettle-job-settings filePath="" jobName="" schemaName="" kettleJoinType="0" savingToFile="true" />
+ <play-pen zoom="1.0" viewportX="0" viewportY="0" relationship-style="rectilinear" names-displayLogicalNames="true" showPrimaryTag="true" showForeignTag="true" showAlternateTag="true" columnVisibility="ALL" relationshipLabelVisibility="true">
+  <table-pane table-ref="TAB1" x="174" y="24" bgColor="0xeeeeee" fgColor="0x000000" rounded="true" dashed="false"/>
+  <table-pane table-ref="TAB15" x="1110" y="419" bgColor="0xeeeeee" fgColor="0x000000" rounded="true" dashed="false"/>
+  <table-pane table-ref="TAB23" x="385" y="589" bgColor="0xeeeeee" fgColor="0x000000" rounded="true" dashed="false"/>
+  <table-pane table-ref="TAB31" x="422" y="395" bgColor="0xeeeeee" fgColor="0x000000" rounded="true" dashed="false"/>
+  <table-pane table-ref="TAB39" x="717" y="162" bgColor="0xeeeeee" fgColor="0x000000" rounded="true" dashed="false"/>
+  <table-pane table-ref="TAB46" x="25" y="382" bgColor="0xeeeeee" fgColor="0x000000" rounded="true" dashed="false"/>
+  <table-pane table-ref="TAB57" x="652" y="20" bgColor="0xeeeeee" fgColor="0x000000" rounded="true" dashed="false"/>
+  <table-link relationship-ref="REL63" pkConnection="0.4899713467048711" fkConnection="0.5020408163265306" rLineColor="0x2e3436" pkLabelText="" fkLabelText="" orientation="132"/>
+  <table-link relationship-ref="REL73" pkConnection="0.541795665634675" fkConnection="0.47551020408163264" rLineColor="0x2e3436" pkLabelText="" fkLabelText="" orientation="72"/>
+  <table-link relationship-ref="REL65" pkConnection="0.5245098039215687" fkConnection="0.38461538461538464" rLineColor="0x2e3436" pkLabelText="" fkLabelText="" orientation="33"/>
+  <table-link relationship-ref="REL71" pkConnection="0.24013157894736842" fkConnection="0.6109979633401222" rLineColor="0x2e3436" pkLabelText="" fkLabelText="" orientation="72"/>
+  <table-link relationship-ref="REL67" pkConnection="0.25787965616045844" fkConnection="0.7180232558139535" rLineColor="0x2e3436" pkLabelText="" fkLabelText="" orientation="132"/>
+  <table-link relationship-ref="REL69" pkConnection="0.3782771535580524" fkConnection="0.8181818181818182" rLineColor="0x2e3436" pkLabelText="" fkLabelText="" orientation="33"/>
+ </play-pen>
+ <critic-manager>
+  <critic-grouping platformType="Generic" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.PrimaryKeyCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.RelationshipMappingTypeCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.EmptyRelationshipCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.AlphaNumericNameCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.AlphaNumericSequenceNameCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SetDefaultOnColumnWithNoDefaultCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SetNullOnNonNullableColumnCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.DuplicateNameCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="DB2" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.DB2UnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="H2" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.H2UnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="HSQLDB" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.HSQLDBUnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="MySQL" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.MySQLCommentCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.MySQLReservedWordsCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.MySQLUnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="Oracle" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.OraclePhysicalNameCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.OracleReservedWordsCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.OracleUnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="PostgreSQL" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.PostgreSQLReservedWordsCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="SQL Server" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SQLServerUnsupportedFeaturesCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SQLServerReservedWordsCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="SQL Server 2000" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SQLServer2000UnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="SQL Server 2005" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SQLServer2005UnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+ </critic-manager>
+ <profiles topNCount="10">
+  </profiles>
+  <olap>
+  </olap>
+  <olap-gui>
+  </olap-gui>
+</architect-project>
